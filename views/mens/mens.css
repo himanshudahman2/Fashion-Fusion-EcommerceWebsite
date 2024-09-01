@@ -1,0 +1,45 @@
+.card {
+    height: 100% !important; /* This makes all cards the same height */
+  }
+  
+  .card-img-top {
+    width: 100% !important; /* This makes the image take up the full width of the card */
+    height: 200px !important; /* This sets the height of the image */
+    object-fit: cover !important; /* This ensures the image is scaled to fit the container while maintaining its aspect ratio */
+  }
+
+  @media (max-width: 768px) {
+    .card-img-top {
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-img-top {
+      height: 100px;
+    }
+  }
+  
+  .card {
+    height: 100%; /* This makes all cards the same height */
+    padding: 0; /* This removes the default padding from the card */
+    margin-bottom: 10px; /* This adds a small margin at the bottom of the card */
+  }
+  
+  .card-body {
+    padding: 0.5rem; /* This reduces the padding in the card body */
+  }
+  
+  .card-img-top {
+    width: 100%; /* This makes the image take up the full width of the card */
+    height: 150px; /* This sets the height of the image */
+    object-fit: cover; /* This ensures the image is scaled to fit the container while maintaining its aspect ratio */
+  }
+  
+  .card-title {
+    font-size: 1rem; /* This reduces the font size of the card title */
+  }
+  
+  .card-text {
+    font-size: 0.8rem; /* This reduces the font size of the card text */
+  }

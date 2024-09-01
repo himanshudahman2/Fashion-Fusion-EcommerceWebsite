@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Fashion Fusion</title>
+    <style>
+      .card-wrapper {
+        display: block;
+        text-decoration: none;
+      }
+
+      .card-wrapper .card {
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+      }
+
+      .card-wrapper .card:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Fashion Fusion</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/index/mens">Mens</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/index/womens">Womens</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/index/mens">Kids</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                id="myInput"
+                onkeyup="searchFun()"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <section>
+        <div class="Initial">
+          <h1>Discover the Latest Fashion Trends</h1>
+          <p>Shop our newest arrivals and must-have styles.</p>
+          <a href="/index/mens"><img src="assets/sale1.png" class="saleImg" alt="Description of the image" /></a>
+        </div>
+      </section>
+      <div class="cloth-item">
+        <div class="text">
+          <h2><b>Trendy Clothing for Everyone</b></h2>
+          <h3>Find the perfect outfit for any occasion!</h3>
+          <br />
+          <h3>Starting from: @1999</h3>
+        </div>
+        
+        <a href="/index/mens" class="card-wrapper">
+          <div class="card" style="width: 18rem">
+            <img src="assets/men.png" class="card-img-top" alt="Men's Clothing" />
+            <div class="card-body">
+              <h4>Men's Collection</h4>
+              <p class="card-text">
+                Explore our stylish and comfortable men's clothing collection. Perfect for both casual and formal occasions.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="/index/womens" class="card-wrapper">
+          <div class="card" style="width: 18rem">
+            <img src="assets/women.png" class="card-img-top" alt="Women's Clothing" />
+            <div class="card-body">
+              <h4>Women's Collection</h4>
+              <p class="card-text">
+                Discover the latest trends in women's fashion. Elegant and chic outfits to suit every taste.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="/index/mens" class="card-wrapper">
+          <div class="card" style="width: 18rem">
+            <img src="assets/kid.png" class="card-img-top" alt="Kids' Clothing" />
+            <div class="card-body">
+              <h4>Kids' Collection</h4>
+              <p class="card-text">
+                Shop our collection of fun and comfortable clothing for kids. Great styles for every season.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <img src="assets/underline.png" class="underline" alt="underline" />
+
+      <div class="shoe-item">
+        <div class="text">
+          <h2><b>Stylish Shoes for Every Step</b></h2>
+          <h3>Step up your shoe game with our latest collection!</h3>
+          <br />
+          <h3>Starting from: @799</h3>
+        </div>
+        <a href="/index/mens" class="card-wrapper">
+          <div class="card" style="width: 18rem">
+            <img src="assets/shoes.jpg" class="card-img-top" alt="Men's Shoes" />
+            <div class="card-body">
+              <h4>Men's Shoes</h4>
+              <p class="card-text">
+                Browse our range of men's shoes, from casual sneakers to formal dress shoes. Comfort and style in every step.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="/index/womens" class="card-wrapper">
+          <div class="card" style="width: 18rem">
+            <img src="assets/womenShoes.jpg" class="card-img-top" alt="Women's Shoes" />
+            <div class="card-body">
+              <h4>Women's Shoes</h4>
+              <p class="card-text">
+                Discover elegant and fashionable shoes for women. Perfect for any event, from everyday wear to special occasions.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="/index/mens" class="card-wrapper">
+          <div class="card" style="width: 18rem">
+            <img src="assets/kidShoes.jpg" class="card-img-top" alt="Kids' Shoes" />
+            <div class="card-body">
+              <h4>Kids' Shoes</h4>
+              <p class="card-text">
+                Find playful and durable shoes for kids. Ideal for school, play, and everything in between.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <img src="assets/underline.png" class="underline" alt="underline" />
+      <!-- gym wear -->
+      <div class="cloth-item">
+        <div class="text">
+          <h2><b>Comfortable Sports Wear</b></h2>
+          <h3>Get ready to sweat in style!</h3>
+          <br />
+          <h3>Starting from: @199</h3>
+        </div>
+        <a href="/index/mens" class="card-wrapper">
+          <div class="card" style="width: 18rem">
+            <img src="assets/gymwearmen.jpg" class="card-img-top" alt="Men's Gym Wear" />
+            <div class="card-body">
+              <h4>Men's Gym Wear</h4>
+              <p class="card-text">
+                Achieve your fitness goals with our high-performance gym wear for men. Designed for comfort and durability.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="/index/womens" class="card-wrapper">
+          <div class="card" style="width: 18rem">
+            <img src="assets/gymwearwomen.jpg" class="card-img-top" alt="Women's Gym Wear" />
+            <div class="card-body">
+              <h4>Women's Gym Wear</h4>
+              <p class="card-text">
+                Elevate your workout wardrobe with our range of stylish and functional gym wear for women.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="/index/mens" class="card-wrapper">
+          <div class="card" style="width: 18rem">
+            <img src="assets/gymkidswear.jpg" class="card-img-top" alt="Kids' Gym Wear" />
+            <div class="card-body">
+              <h4>Kids' Sports Wear</h4>
+              <p class="card-text">
+                Our gym wear for kids ensures comfort and flexibility for active play and exercise.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <img src="assets/underline.png" class="underline" alt="underline" />
+
+      <div class="shoe-item">
+        <a href="/index/mens" class="card-wrapper">
+          <div class="card" style="width: 18rem">
+            <img src="assets/sportshoesmen.jpg" class="card-img-top" alt="Men's Shoes" />
+            <div class="card-body">
+              <h4>Men's Shoes</h4>
+              <p class="card-text">
+                Explore our range of stylish and comfortable shoes for men. Perfect for any occasion.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="/index/womens" class="card-wrapper">
+          <div class="card" style="width: 18rem">
+            <img src="assets/sportshoeswomen.jpg" class="card-img-top" alt="Women's Shoes" />
+            <div class="card-body">
+              <h4>Women's Shoes</h4>
+              <p class="card-text">
+                Find fashionable and durable shoes for women. Ideal for both casual and formal settings.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="/index/mens" class="card-wrapper">
+          <div class="card" style="width: 18rem">
+            <img src="assets/sportshoeskids.jpg" class="card-img-top" alt="Kids' Shoes" />
+            <div class="card-body">
+              <h4>Kids' Shoes</h4>
+              <p class="card-text">
+                Discover our collection of shoes for kids, designed for comfort and fun.
+              </p>
+            </div>
+          </div>
+        </a>
+        <div class="text">
+          <h3>Step Up Your Style With Us!</h3>
+          <br />
+          <h3>Starting from: @799</h3>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+        <div class="container text-center">
+          <a href="https://www.instagram.com/himanshujangra23/?igsh=MWFlbXVoMDdqcjk4cA%3D%3D&utm_source=qr" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/9991423362" class="social-icon">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://www.facebook.com" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+        @Fashion Fusion Private limited
+      </footer>
+      <script src="/views.js"></script>
+  </body>
+</html>
